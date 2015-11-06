@@ -1,0 +1,6 @@
+Participants are allowed to submit up to 7 runs. The first run (baseline) is compulsory, while the others (runs 2-7) are optional. 
+- Run 1 is a baseline: only title and description in the query can be used, and no external resource (including discharge summary, corpora, ontology, etc) can be used.
+- Runs 2-4 any experiment WITHOUT the discharge summaries .
+- Runs 5-7 any experiment WITH the discharge summaries.
+One of the runs from 2-4 and one from 5-7 has to use only the fields title and desc from the queries .
+The runs have to be ranked in order of priority (1-7, 1 being the highest priority).

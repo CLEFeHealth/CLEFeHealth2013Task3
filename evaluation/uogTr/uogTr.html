@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Share/CLEF eHealth 2013 TASK 3 Results by relevation - Information Retrieval Relevance Judging System</title>
+   <meta name="description" content="">
+    <meta name="author" content="CLEF 2013 Task 3 Committee">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style type="text/css">
+        body { padding-top: 60px; font-size: 12px; }
+        label, button, .btn { font-size: 12px; }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="./clef_eval_files/jquery.min.js"></script>
+    <script src="./clef_eval_files/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<style type="text/css">@media print { #feedlyMiniIcon { display: none; } }</style></head>
+
+<body style="zoom: 1;">
+<div class="container">
+<div class="well">
+        <h1>Share/CLEF eHealth 2013 TASK 3 Results - uogTr</h1>
+        <p>This page summarises the results obtained from your submissions. Here, you can find the mean performance of your submissions, for all standard trec_eval measures and for nDCG at different ranks.</br> For this first year, the Share/CLEF eHealth 2013 TASK 3 built result pools from your submissions considering the top 10 documents ranked by your baseline system (run 1), and the highest priority run that used the discharge summaries (run 2) and the highest priority run that did not used the discharge summaries (run 5). As a consequence:<ul><li>the <b>primary measure for this year is precision at 10 (P@10)</b>,</li><li>the <b>secondary measure is Normalised Discounted Cumulative Gain at rank 10</b> (ndcg_cut_10).</li></ul>Per-query performance can be found in the <i>evals</i> folder in the directory containing this HTML page.</br>Some of the participant's runs contained formatting errors (the most common was the use of a numeric query id in place of the official qtestXX id); others did not retrieve results for some queries. To fairly evaluate the runs of every participant, submitted runs containing formatting errors have been corrected; an artificial document (fakeCLEF) has been added to the result rankings for queries where no result was retrieved. Your runs as have been evaluated are contained in the folder <i>runs</i>.</br>Please refer to the <a href="https://sites.google.com/site/shareclefehealth/">ShARe/CLEF 2013 eHealth Evaluation Lab website</a> for additional details on the task.</p>
+    </div>
+    <div class="row">
+        <div class="span9">
+            <h2>Evaluation with standard trec_eval metrics</h2>
+        <p>These results have been obtained with the binary relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>. Trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt runName</pre>
+ <h4>uogTr.1.3.noadd.res</h4>
+            <pre>
+runid                 	all	runZ
+num_q                 	all	50
+num_ret               	all	46893
+num_rel               	all	1878
+num_rel_ret           	all	1005
+map                   	all	0.2438
+gm_map                	all	0.0700
+Rprec                 	all	0.2671
+bpref                 	all	0.3184
+recip_rank            	all	0.5314
+iprec_at_recall_0.00  	all	0.5985
+iprec_at_recall_0.10  	all	0.5039
+iprec_at_recall_0.20  	all	0.4446
+iprec_at_recall_0.30  	all	0.3820
+iprec_at_recall_0.40  	all	0.3032
+iprec_at_recall_0.50  	all	0.2419
+iprec_at_recall_0.60  	all	0.1703
+iprec_at_recall_0.70  	all	0.1286
+iprec_at_recall_0.80  	all	0.0915
+iprec_at_recall_0.90  	all	0.0389
+iprec_at_recall_1.00  	all	0.0164
+P_5                   	all	0.4240
+P_10                  	all	0.4360
+P_15                  	all	0.4067
+P_20                  	all	0.3620
+P_30                  	all	0.2947
+P_100                 	all	0.1320
+P_200                 	all	0.0824
+P_500                 	all	0.0373
+P_1000                	all	0.0201
+</pre>
+ <h4>uogTr.5.3.noadd.res</h4>
+            <pre>
+runid                 	all	runA
+num_q                 	all	50
+num_ret               	all	49001
+num_rel               	all	1878
+num_rel_ret           	all	983
+map                   	all	0.2429
+gm_map                	all	0.0596
+Rprec                 	all	0.2489
+bpref                 	all	0.3169
+recip_rank            	all	0.5234
+iprec_at_recall_0.00  	all	0.5776
+iprec_at_recall_0.10  	all	0.5024
+iprec_at_recall_0.20  	all	0.4641
+iprec_at_recall_0.30  	all	0.3842
+iprec_at_recall_0.40  	all	0.3076
+iprec_at_recall_0.50  	all	0.2297
+iprec_at_recall_0.60  	all	0.1632
+iprec_at_recall_0.70  	all	0.1160
+iprec_at_recall_0.80  	all	0.0736
+iprec_at_recall_0.90  	all	0.0299
+iprec_at_recall_1.00  	all	0.0155
+P_5                   	all	0.4280
+P_10                  	all	0.4400
+P_15                  	all	0.3920
+P_20                  	all	0.3530
+P_30                  	all	0.2947
+P_100                 	all	0.1290
+P_200                 	all	0.0815
+P_500                 	all	0.0366
+P_1000                	all	0.0197
+</pre>
+ <h4>uogTr.6.3.noadd.res</h4>
+            <pre>
+runid                 	all	runB
+num_q                 	all	50
+num_ret               	all	49001
+num_rel               	all	1878
+num_rel_ret           	all	978
+map                   	all	0.2186
+gm_map                	all	0.0501
+Rprec                 	all	0.2429
+bpref                 	all	0.3297
+recip_rank            	all	0.5196
+iprec_at_recall_0.00  	all	0.5731
+iprec_at_recall_0.10  	all	0.4725
+iprec_at_recall_0.20  	all	0.4248
+iprec_at_recall_0.30  	all	0.3376
+iprec_at_recall_0.40  	all	0.2597
+iprec_at_recall_0.50  	all	0.2037
+iprec_at_recall_0.60  	all	0.1447
+iprec_at_recall_0.70  	all	0.1005
+iprec_at_recall_0.80  	all	0.0612
+iprec_at_recall_0.90  	all	0.0237
+iprec_at_recall_1.00  	all	0.0120
+P_5                   	all	0.4120
+P_10                  	all	0.4040
+P_15                  	all	0.3587
+P_20                  	all	0.3240
+P_30                  	all	0.2720
+P_100                 	all	0.1228
+P_200                 	all	0.0743
+P_500                 	all	0.0363
+P_1000                	all	0.0196
+</pre>
+ <h4>uogTr.7.3.noadd.res</h4>
+            <pre>
+runid                 	all	runC
+num_q                 	all	50
+num_ret               	all	49001
+num_rel               	all	1878
+num_rel_ret           	all	961
+map                   	all	0.1923
+gm_map                	all	0.0508
+Rprec                 	all	0.2180
+bpref                 	all	0.3386
+recip_rank            	all	0.4637
+iprec_at_recall_0.00  	all	0.5181
+iprec_at_recall_0.10  	all	0.4281
+iprec_at_recall_0.20  	all	0.3802
+iprec_at_recall_0.30  	all	0.3167
+iprec_at_recall_0.40  	all	0.2188
+iprec_at_recall_0.50  	all	0.1784
+iprec_at_recall_0.60  	all	0.1166
+iprec_at_recall_0.70  	all	0.0891
+iprec_at_recall_0.80  	all	0.0550
+iprec_at_recall_0.90  	all	0.0206
+iprec_at_recall_1.00  	all	0.0105
+P_5                   	all	0.3640
+P_10                  	all	0.3500
+P_15                  	all	0.3067
+P_20                  	all	0.2780
+P_30                  	all	0.2367
+P_100                 	all	0.1198
+P_200                 	all	0.0777
+P_500                 	all	0.0360
+P_1000                	all	0.0192
+</pre>
+
+<h2>Evaluation with nDCG</h2>
+        <p>These results have been obtained with the graded relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>.</br>To obtain nDCG at different ranks, trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 -m ndcg_cut qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt runName</pre>
+ <h4>uogTr.1.3.noadd.res</h4>
+            <pre>
+ndcg_cut_5            	all	0.3708
+ndcg_cut_10           	all	0.3807
+ndcg_cut_15           	all	0.3794
+ndcg_cut_20           	all	0.3718
+ndcg_cut_30           	all	0.3597
+ndcg_cut_100          	all	0.4005
+ndcg_cut_200          	all	0.4408
+ndcg_cut_500          	all	0.4623
+ndcg_cut_1000         	all	0.4791
+</pre>
+ <h4>uogTr.5.3.noadd.res</h4>
+            <pre>
+ndcg_cut_5            	all	0.3663
+ndcg_cut_10           	all	0.3840
+ndcg_cut_15           	all	0.3738
+ndcg_cut_20           	all	0.3664
+ndcg_cut_30           	all	0.3584
+ndcg_cut_100          	all	0.3871
+ndcg_cut_200          	all	0.4265
+ndcg_cut_500          	all	0.4522
+ndcg_cut_1000         	all	0.4672
+</pre>
+ <h4>uogTr.6.3.noadd.res</h4>
+            <pre>
+ndcg_cut_5            	all	0.3470
+ndcg_cut_10           	all	0.3528
+ndcg_cut_15           	all	0.3415
+ndcg_cut_20           	all	0.3372
+ndcg_cut_30           	all	0.3337
+ndcg_cut_100          	all	0.3657
+ndcg_cut_200          	all	0.3946
+ndcg_cut_500          	all	0.4354
+ndcg_cut_1000         	all	0.4508
+</pre>
+ <h4>uogTr.7.3.noadd.res</h4>
+            <pre>
+ndcg_cut_5            	all	0.3229
+ndcg_cut_10           	all	0.3207
+ndcg_cut_15           	all	0.3061
+ndcg_cut_20           	all	0.2996
+ndcg_cut_30           	all	0.2980
+ndcg_cut_100          	all	0.3456
+ndcg_cut_200          	all	0.3874
+ndcg_cut_500          	all	0.4164
+ndcg_cut_1000         	all	0.4297
+</pre>
+
+<h2>Plots P@10</h2>
+<p>The plots below compare each of your runs against the median and best performance (p@10) across all systems  submitted to CLEF for each query topic. In particular, for each query, the height of a bar represents the gain/loss of your system and the best system (for that query) over the median system. The height of a bar in then given by:</p>
+<pre>grey bars:   height(q) = your_p@10(q) - median_p@10(q)
+white bars:  height(q) = best_p@10(q) - median_p@10(q)</pre>
+
+ <h4>uogTr.1.3.noadd.res</h4>
+<img src="./img/uogTr.1.3.noadd.res.p10.png"/>
+ <h4>uogTr.5.3.noadd.res</h4>
+<img src="./img/uogTr.5.3.noadd.res.p10.png"/>
+ <h4>uogTr.6.3.noadd.res</h4>
+<img src="./img/uogTr.6.3.noadd.res.p10.png"/>
+ <h4>uogTr.7.3.noadd.res</h4>
+<img src="./img/uogTr.7.3.noadd.res.p10.png"/>
+      </div>
+    </div>
+
+    <p></p><hr><p></p>
+    <footer class="row">
+        <div class="span6">
+           <p><a href="https://github.com/bevankoopman/relevation">relevation</a> - Information Retrieval Relevance Judging System</p>
+      </div>
+    </footer>
+</div> <!-- container -->
+</body></html>

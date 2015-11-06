@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries>
+<query>
+<id>1</id>
+<discharge_summary>09963-257487-RADIOLOGY_REPORT.doc</discharge_summary>
+<title>Crohn’s disease</title>
+<desc>What is Crohn’s disease and can it be cured?</desc>
+<narr>Documents should contain information about Crohn’s disease and its treatment. It should describe the disease and its treatment.</narr>
+<profile>We assume that this patient seeks information for himself, he is familiar with search engines. This is a newly diagnosed chronic disease. He wants to know what is Crohn’s disease.</profile>
+</query>
+
+<query>
+<id>2</id>
+<discharge_summary>10101-012638-DISCHARGE_SUMMARY.txt</discharge_summary>
+<title>Metastases of adrenals and pain and pain treatment</title>
+<desc>How painful are the growing metastases and what are the possibilities for pain treatment? </desc>
+<narr>Documents should contain information about metastases of adrenals, paindisease and pain and pain medications and possible other pain alleviation methods. It should describe the condition and possibilities of different types of pain management.</narr>
+<profile>We assume that this patient is not familiar with www and he asks his son/daughter to seek for information about the growth of metastases, their painfulness and pain treatment.</profile>
+</query>
+
+<query>
+<id>3</id>
+<discharge_summary>19709-026760-DISCHARGE_SUMMARY.txt</discharge_summary>
+<title>radial neck fracture and healing time</title>
+<desc>How long time one has to have the splint with sling in the case of radial neck fracture?</desc>
+<narr>Documents should contain information about the healing time of radial neck fracture and how long one has to have the splint.</narr>
+<profile>We assume that this woman has been in an accident and has a lot of other more severe diagnosis at the same time only wants to know about this acute condition how long she has to have the splint with sling.</profile>
+</query>
+
+<query>
+<id>4</id>
+<discharge_summary>21413-012450-DISCHARGE_SUMMARY.txt</discharge_summary>
+<title>Cdiff</title>
+<desc>What is Cdiff, why is it so dangerous and could something have been done at an earlier stage?</desc>
+<narr>Documents should contain information about clostridium difficile and it’s seriousness and are there possible effective treatments. There should also be information about the contagiousness of the disease.</narr>
+<profile>We assume since the patient died the children want to know why this acute condition was so serious that their father died</profile>
+</query>
+
+<query>
+<id>5</id>
+<discharge_summary>21833-003461-DISCHARGE_SUMMARY.txt</discharge_summary>
+<title>Group B streptococcus and treatment and renal</title>
+<desc>What is group b streptococcus and what kind of treatment options are there? Can it harm the renals?</desc>
+<narr>Documents should contain information about the group B streptococcus bacteria and the treatment options and also information about the bacteria in renals.</narr>
+<profile>We assume that this 35 year old woman seeks info herself for this acute condition and wants to know about the bacteria and the treatment options and how it affects the renals</profile>
+</query>
+</queries>

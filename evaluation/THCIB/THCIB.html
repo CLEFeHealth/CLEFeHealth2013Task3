@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Share/CLEF eHealth 2013 TASK 3 Results by relevation - Information Retrieval Relevance Judging System</title>
+   <meta name="description" content="">
+    <meta name="author" content="CLEF 2013 Task 3 Committee">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style type="text/css">
+        body { padding-top: 60px; font-size: 12px; }
+        label, button, .btn { font-size: 12px; }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="./clef_eval_files/jquery.min.js"></script>
+    <script src="./clef_eval_files/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<style type="text/css">@media print { #feedlyMiniIcon { display: none; } }</style></head>
+
+<body style="zoom: 1;">
+<div class="container">
+<div class="well">
+        <h1>Share/CLEF eHealth 2013 TASK 3 Results - THCIB</h1>
+        <p>This page summarises the results obtained from your submissions. Here, you can find the mean performance of your submissions, for all standard trec_eval measures and for nDCG at different ranks.</br> For this first year, the Share/CLEF eHealth 2013 TASK 3 built result pools from your submissions considering the top 10 documents ranked by your baseline system (run 1), and the highest priority run that used the discharge summaries (run 2) and the highest priority run that did not used the discharge summaries (run 5). As a consequence:<ul><li>the <b>primary measure for this year is precision at 10 (P@10)</b>,</li><li>the <b>secondary measure is Normalised Discounted Cumulative Gain at rank 10</b> (ndcg_cut_10).</li></ul>Per-query performance can be found in the <i>evals</i> folder in the directory containing this HTML page.</br>Some of the participant's runs contained formatting errors (the most common was the use of a numeric query id in place of the official qtestXX id); others did not retrieve results for some queries. To fairly evaluate the runs of every participant, submitted runs containing formatting errors have been corrected; an artificial document (fakeCLEF) has been added to the result rankings for queries where no result was retrieved. Your runs as have been evaluated are contained in the folder <i>runs</i>.</br>Please refer to the <a href="https://sites.google.com/site/shareclefehealth/">ShARe/CLEF 2013 eHealth Evaluation Lab website</a> for additional details on the task.</p>
+    </div>
+    <div class="row">
+        <div class="span9">
+            <h2>Evaluation with standard trec_eval metrics</h2>
+        <p>These results have been obtained with the binary relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>. Trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt runName</pre>
+ <h4>THCIB.1.3.noadd</h4>
+            <pre>
+runid                 	all	RUN1
+num_q                 	all	50
+num_ret               	all	497
+num_rel               	all	1878
+num_rel_ret           	all	198
+map                   	all	0.1028
+gm_map                	all	0.0077
+Rprec                 	all	0.1343
+bpref                 	all	0.1247
+recip_rank            	all	0.5233
+iprec_at_recall_0.00  	all	0.5910
+iprec_at_recall_0.10  	all	0.4707
+iprec_at_recall_0.20  	all	0.2375
+iprec_at_recall_0.30  	all	0.0648
+iprec_at_recall_0.40  	all	0.0120
+iprec_at_recall_0.50  	all	0.0000
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.4360
+P_10                  	all	0.3960
+P_15                  	all	0.2640
+P_20                  	all	0.1980
+P_30                  	all	0.1320
+P_100                 	all	0.0396
+P_200                 	all	0.0198
+P_500                 	all	0.0079
+P_1000                	all	0.0040
+</pre>
+ <h4>THCIB.2.3.noadd</h4>
+            <pre>
+runid                 	all	RUN2
+num_q                 	all	50
+num_ret               	all	500
+num_rel               	all	1878
+num_rel_ret           	all	199
+map                   	all	0.1106
+gm_map                	all	0.0134
+Rprec                 	all	0.1449
+bpref                 	all	0.1339
+recip_rank            	all	0.5422
+iprec_at_recall_0.00  	all	0.6126
+iprec_at_recall_0.10  	all	0.4459
+iprec_at_recall_0.20  	all	0.2787
+iprec_at_recall_0.30  	all	0.0863
+iprec_at_recall_0.40  	all	0.0320
+iprec_at_recall_0.50  	all	0.0200
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.4440
+P_10                  	all	0.3980
+P_15                  	all	0.2653
+P_20                  	all	0.1990
+P_30                  	all	0.1327
+P_100                 	all	0.0398
+P_200                 	all	0.0199
+P_500                 	all	0.0080
+P_1000                	all	0.0040
+</pre>
+ <h4>THCIB.3.3.noadd</h4>
+            <pre>
+runid                 	all	RUN3
+num_q                 	all	50
+num_ret               	all	500
+num_rel               	all	1878
+num_rel_ret           	all	201
+map                   	all	0.1031
+gm_map                	all	0.0185
+Rprec                 	all	0.1453
+bpref                 	all	0.1323
+recip_rank            	all	0.5530
+iprec_at_recall_0.00  	all	0.6233
+iprec_at_recall_0.10  	all	0.4740
+iprec_at_recall_0.20  	all	0.2455
+iprec_at_recall_0.30  	all	0.0823
+iprec_at_recall_0.40  	all	0.0280
+iprec_at_recall_0.50  	all	0.0160
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.4400
+P_10                  	all	0.4020
+P_15                  	all	0.2680
+P_20                  	all	0.2010
+P_30                  	all	0.1340
+P_100                 	all	0.0402
+P_200                 	all	0.0201
+P_500                 	all	0.0080
+P_1000                	all	0.0040
+</pre>
+ <h4>THCIB.4.3.noadd</h4>
+            <pre>
+runid                 	all	RUN4
+num_q                 	all	50
+num_ret               	all	500
+num_rel               	all	1878
+num_rel_ret           	all	154
+map                   	all	0.0786
+gm_map                	all	0.0063
+Rprec                 	all	0.1173
+bpref                 	all	0.1118
+recip_rank            	all	0.4503
+iprec_at_recall_0.00  	all	0.5014
+iprec_at_recall_0.10  	all	0.3466
+iprec_at_recall_0.20  	all	0.1843
+iprec_at_recall_0.30  	all	0.0587
+iprec_at_recall_0.40  	all	0.0140
+iprec_at_recall_0.50  	all	0.0000
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.3160
+P_10                  	all	0.3080
+P_15                  	all	0.2053
+P_20                  	all	0.1540
+P_30                  	all	0.1027
+P_100                 	all	0.0308
+P_200                 	all	0.0154
+P_500                 	all	0.0062
+P_1000                	all	0.0031
+</pre>
+ <h4>THCIB.5.3.noadd</h4>
+            <pre>
+runid                 	all	RUN5
+num_q                 	all	50
+num_ret               	all	500
+num_rel               	all	1878
+num_rel_ret           	all	210
+map                   	all	0.1217
+gm_map                	all	0.0148
+Rprec                 	all	0.1523
+bpref                 	all	0.1431
+recip_rank            	all	0.5872
+iprec_at_recall_0.00  	all	0.6469
+iprec_at_recall_0.10  	all	0.4832
+iprec_at_recall_0.20  	all	0.3007
+iprec_at_recall_0.30  	all	0.1063
+iprec_at_recall_0.40  	all	0.0320
+iprec_at_recall_0.50  	all	0.0200
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.4800
+P_10                  	all	0.4200
+P_15                  	all	0.2800
+P_20                  	all	0.2100
+P_30                  	all	0.1400
+P_100                 	all	0.0420
+P_200                 	all	0.0210
+P_500                 	all	0.0084
+P_1000                	all	0.0042
+</pre>
+ <h4>THCIB.6.3.noadd</h4>
+            <pre>
+runid                 	all	RUN6
+num_q                 	all	50
+num_ret               	all	500
+num_rel               	all	1878
+num_rel_ret           	all	207
+map                   	all	0.1155
+gm_map                	all	0.0163
+Rprec                 	all	0.1476
+bpref                 	all	0.1412
+recip_rank            	all	0.5621
+iprec_at_recall_0.00  	all	0.6227
+iprec_at_recall_0.10  	all	0.4620
+iprec_at_recall_0.20  	all	0.2988
+iprec_at_recall_0.30  	all	0.1063
+iprec_at_recall_0.40  	all	0.0320
+iprec_at_recall_0.50  	all	0.0200
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.4560
+P_10                  	all	0.4140
+P_15                  	all	0.2760
+P_20                  	all	0.2070
+P_30                  	all	0.1380
+P_100                 	all	0.0414
+P_200                 	all	0.0207
+P_500                 	all	0.0083
+P_1000                	all	0.0041
+</pre>
+ <h4>THCIB.7.3.noadd</h4>
+            <pre>
+runid                 	all	RUN7
+num_q                 	all	50
+num_ret               	all	500
+num_rel               	all	1878
+num_rel_ret           	all	154
+map                   	all	0.0729
+gm_map                	all	0.0072
+Rprec                 	all	0.1078
+bpref                 	all	0.1044
+recip_rank            	all	0.4587
+iprec_at_recall_0.00  	all	0.5125
+iprec_at_recall_0.10  	all	0.3436
+iprec_at_recall_0.20  	all	0.1569
+iprec_at_recall_0.30  	all	0.0620
+iprec_at_recall_0.40  	all	0.0000
+iprec_at_recall_0.50  	all	0.0000
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.3360
+P_10                  	all	0.3080
+P_15                  	all	0.2053
+P_20                  	all	0.1540
+P_30                  	all	0.1027
+P_100                 	all	0.0308
+P_200                 	all	0.0154
+P_500                 	all	0.0062
+P_1000                	all	0.0031
+</pre>
+
+<h2>Evaluation with nDCG</h2>
+        <p>These results have been obtained with the graded relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>.</br>To obtain nDCG at different ranks, trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 -m ndcg_cut qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt runName</pre>
+ <h4>THCIB.1.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.3923
+ndcg_cut_10           	all	0.3716
+ndcg_cut_15           	all	0.3018
+ndcg_cut_20           	all	0.2657
+ndcg_cut_30           	all	0.2296
+ndcg_cut_100          	all	0.2061
+ndcg_cut_200          	all	0.2049
+ndcg_cut_500          	all	0.2039
+ndcg_cut_1000         	all	0.2037
+</pre>
+ <h4>THCIB.2.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.4026
+ndcg_cut_10           	all	0.3808
+ndcg_cut_15           	all	0.3104
+ndcg_cut_20           	all	0.2743
+ndcg_cut_30           	all	0.2383
+ndcg_cut_100          	all	0.2149
+ndcg_cut_200          	all	0.2141
+ndcg_cut_500          	all	0.2134
+ndcg_cut_1000         	all	0.2133
+</pre>
+ <h4>THCIB.3.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.3966
+ndcg_cut_10           	all	0.3811
+ndcg_cut_15           	all	0.3098
+ndcg_cut_20           	all	0.2730
+ndcg_cut_30           	all	0.2358
+ndcg_cut_100          	all	0.2104
+ndcg_cut_200          	all	0.2095
+ndcg_cut_500          	all	0.2087
+ndcg_cut_1000         	all	0.2086
+</pre>
+ <h4>THCIB.4.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.2800
+ndcg_cut_10           	all	0.2910
+ndcg_cut_15           	all	0.2387
+ndcg_cut_20           	all	0.2127
+ndcg_cut_30           	all	0.1870
+ndcg_cut_100          	all	0.1694
+ndcg_cut_200          	all	0.1685
+ndcg_cut_500          	all	0.1677
+ndcg_cut_1000         	all	0.1676
+</pre>
+ <h4>THCIB.5.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.4352
+ndcg_cut_10           	all	0.4044
+ndcg_cut_15           	all	0.3287
+ndcg_cut_20           	all	0.2898
+ndcg_cut_30           	all	0.2519
+ndcg_cut_100          	all	0.2282
+ndcg_cut_200          	all	0.2274
+ndcg_cut_500          	all	0.2267
+ndcg_cut_1000         	all	0.2266
+</pre>
+ <h4>THCIB.6.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.4100
+ndcg_cut_10           	all	0.3904
+ndcg_cut_15           	all	0.3179
+ndcg_cut_20           	all	0.2809
+ndcg_cut_30           	all	0.2434
+ndcg_cut_100          	all	0.2198
+ndcg_cut_200          	all	0.2191
+ndcg_cut_500          	all	0.2185
+ndcg_cut_1000         	all	0.2185
+</pre>
+ <h4>THCIB.7.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.2984
+ndcg_cut_10           	all	0.2928
+ndcg_cut_15           	all	0.2380
+ndcg_cut_20           	all	0.2096
+ndcg_cut_30           	all	0.1808
+ndcg_cut_100          	all	0.1618
+ndcg_cut_200          	all	0.1609
+ndcg_cut_500          	all	0.1601
+ndcg_cut_1000         	all	0.1600
+</pre>
+
+<h2>Plots P@10</h2>
+<p>The plots below compare each of your runs against the median and best performance (p@10) across all systems  submitted to CLEF for each query topic. In particular, for each query, the height of a bar represents the gain/loss of your system and the best system (for that query) over the median system. The height of a bar in then given by:</p>
+<pre>grey bars:   height(q) = your_p@10(q) - median_p@10(q)
+white bars:  height(q) = best_p@10(q) - median_p@10(q)</pre>
+
+ <h4>THCIB.1.3.noadd</h4>
+<img src="./img/THCIB.1.3.noadd.p10.png"/>
+ <h4>THCIB.2.3.noadd</h4>
+<img src="./img/THCIB.2.3.noadd.p10.png"/>
+ <h4>THCIB.3.3.noadd</h4>
+<img src="./img/THCIB.3.3.noadd.p10.png"/>
+ <h4>THCIB.4.3.noadd</h4>
+<img src="./img/THCIB.4.3.noadd.p10.png"/>
+ <h4>THCIB.5.3.noadd</h4>
+<img src="./img/THCIB.5.3.noadd.p10.png"/>
+ <h4>THCIB.6.3.noadd</h4>
+<img src="./img/THCIB.6.3.noadd.p10.png"/>
+ <h4>THCIB.7.3.noadd</h4>
+<img src="./img/THCIB.7.3.noadd.p10.png"/>
+      </div>
+    </div>
+
+    <p></p><hr><p></p>
+    <footer class="row">
+        <div class="span6">
+           <p><a href="https://github.com/bevankoopman/relevation">relevation</a> - Information Retrieval Relevance Judging System</p>
+      </div>
+    </footer>
+</div> <!-- container -->
+</body></html>

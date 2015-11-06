@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Share/CLEF eHealth 2013 TASK 3 Results by relevation - Information Retrieval Relevance Judging System</title>
+   <meta name="description" content="">
+    <meta name="author" content="CLEF 2013 Task 3 Committee">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style type="text/css">
+        body { padding-top: 60px; font-size: 12px; }
+        label, button, .btn { font-size: 12px; }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="./clef_eval_files/jquery.min.js"></script>
+    <script src="./clef_eval_files/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<style type="text/css">@media print { #feedlyMiniIcon { display: none; } }</style></head>
+
+<body style="zoom: 1;">
+<div class="container">
+<div class="well">
+        <h1>Share/CLEF eHealth 2013 TASK 3 Results - QUTTOPSIG</h1>
+        <p>This page summarises the results obtained from your submissions. Here, you can find the mean performance of your submissions, for all standard trec_eval measures and for nDCG at different ranks.</br> For this first year, the Share/CLEF eHealth 2013 TASK 3 built result pools from your submissions considering the top 10 documents ranked by your baseline system (run 1), and the highest priority run that used the discharge summaries (run 2) and the highest priority run that did not used the discharge summaries (run 5). As a consequence:<ul><li>the <b>primary measure for this year is precision at 10 (P@10)</b>,</li><li>the <b>secondary measure is Normalised Discounted Cumulative Gain at rank 10</b> (ndcg_cut_10).</li></ul>Per-query performance can be found in the <i>evals</i> folder in the directory containing this HTML page.</br>Some of the participant's runs contained formatting errors (the most common was the use of a numeric query id in place of the official qtestXX id); others did not retrieve results for some queries. To fairly evaluate the runs of every participant, submitted runs containing formatting errors have been corrected; an artificial document (fakeCLEF) has been added to the result rankings for queries where no result was retrieved. Your runs as have been evaluated are contained in the folder <i>runs</i>.</br>Please refer to the <a href="https://sites.google.com/site/shareclefehealth/">ShARe/CLEF 2013 eHealth Evaluation Lab website</a> for additional details on the task.</p>
+    </div>
+    <div class="row">
+        <div class="span9">
+            <h2>Evaluation with standard trec_eval metrics</h2>
+        <p>These results have been obtained with the binary relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>. Trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt runName</pre>
+ <h4>QUTTOPSIG.1.3.noadd</h4>
+            <pre>
+runid                 	all	Topsig
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1492
+map                   	all	0.2014
+gm_map                	all	0.0558
+Rprec                 	all	0.2363
+bpref                 	all	0.3051
+recip_rank            	all	0.5514
+iprec_at_recall_0.00  	all	0.5858
+iprec_at_recall_0.10  	all	0.4609
+iprec_at_recall_0.20  	all	0.3601
+iprec_at_recall_0.30  	all	0.2564
+iprec_at_recall_0.40  	all	0.2155
+iprec_at_recall_0.50  	all	0.1754
+iprec_at_recall_0.60  	all	0.1426
+iprec_at_recall_0.70  	all	0.1115
+iprec_at_recall_0.80  	all	0.0802
+iprec_at_recall_0.90  	all	0.0458
+iprec_at_recall_1.00  	all	0.0052
+P_5                   	all	0.3680
+P_10                  	all	0.3620
+P_15                  	all	0.3107
+P_20                  	all	0.2810
+P_30                  	all	0.2360
+P_100                 	all	0.1348
+P_200                 	all	0.0853
+P_500                 	all	0.0504
+P_1000                	all	0.0298
+</pre>
+ <h4>QUTTOPSIG.2.3.noadd</h4>
+            <pre>
+runid                 	all	Topsig
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1492
+map                   	all	0.2009
+gm_map                	all	0.0554
+Rprec                 	all	0.2363
+bpref                 	all	0.3055
+recip_rank            	all	0.5097
+iprec_at_recall_0.00  	all	0.5715
+iprec_at_recall_0.10  	all	0.4785
+iprec_at_recall_0.20  	all	0.3611
+iprec_at_recall_0.30  	all	0.2564
+iprec_at_recall_0.40  	all	0.2155
+iprec_at_recall_0.50  	all	0.1754
+iprec_at_recall_0.60  	all	0.1426
+iprec_at_recall_0.70  	all	0.1115
+iprec_at_recall_0.80  	all	0.0802
+iprec_at_recall_0.90  	all	0.0458
+iprec_at_recall_1.00  	all	0.0052
+P_5                   	all	0.3680
+P_10                  	all	0.3640
+P_15                  	all	0.3107
+P_20                  	all	0.2810
+P_30                  	all	0.2360
+P_100                 	all	0.1348
+P_200                 	all	0.0853
+P_500                 	all	0.0504
+P_1000                	all	0.0298
+</pre>
+ <h4>QUTTOPSIG.3.3.noadd</h4>
+            <pre>
+runid                 	all	Topsig
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1458
+map                   	all	0.1872
+gm_map                	all	0.0466
+Rprec                 	all	0.2204
+bpref                 	all	0.2959
+recip_rank            	all	0.4361
+iprec_at_recall_0.00  	all	0.5162
+iprec_at_recall_0.10  	all	0.4437
+iprec_at_recall_0.20  	all	0.3496
+iprec_at_recall_0.30  	all	0.2770
+iprec_at_recall_0.40  	all	0.2203
+iprec_at_recall_0.50  	all	0.1580
+iprec_at_recall_0.60  	all	0.1300
+iprec_at_recall_0.70  	all	0.0940
+iprec_at_recall_0.80  	all	0.0726
+iprec_at_recall_0.90  	all	0.0375
+iprec_at_recall_1.00  	all	0.0059
+P_5                   	all	0.3200
+P_10                  	all	0.3320
+P_15                  	all	0.3053
+P_20                  	all	0.2640
+P_30                  	all	0.2200
+P_100                 	all	0.1274
+P_200                 	all	0.0823
+P_500                 	all	0.0480
+P_1000                	all	0.0292
+</pre>
+ <h4>QUTTOPSIG.4.3.noadd</h4>
+            <pre>
+runid                 	all	TopISSL
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	450
+map                   	all	0.0342
+gm_map                	all	0.0008
+Rprec                 	all	0.0630
+bpref                 	all	0.1570
+recip_rank            	all	0.1350
+iprec_at_recall_0.00  	all	0.1522
+iprec_at_recall_0.10  	all	0.0953
+iprec_at_recall_0.20  	all	0.0662
+iprec_at_recall_0.30  	all	0.0448
+iprec_at_recall_0.40  	all	0.0339
+iprec_at_recall_0.50  	all	0.0302
+iprec_at_recall_0.60  	all	0.0185
+iprec_at_recall_0.70  	all	0.0136
+iprec_at_recall_0.80  	all	0.0109
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.0720
+P_10                  	all	0.0560
+P_15                  	all	0.0480
+P_20                  	all	0.0510
+P_30                  	all	0.0587
+P_100                 	all	0.0302
+P_200                 	all	0.0206
+P_500                 	all	0.0156
+P_1000                	all	0.0090
+</pre>
+ <h4>QUTTOPSIG.5.3.noadd</h4>
+            <pre>
+runid                 	all	Topsig
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1458
+map                   	all	0.1859
+gm_map                	all	0.0464
+Rprec                 	all	0.2204
+bpref                 	all	0.2957
+recip_rank            	all	0.4444
+iprec_at_recall_0.00  	all	0.5142
+iprec_at_recall_0.10  	all	0.4303
+iprec_at_recall_0.20  	all	0.3529
+iprec_at_recall_0.30  	all	0.2803
+iprec_at_recall_0.40  	all	0.2203
+iprec_at_recall_0.50  	all	0.1580
+iprec_at_recall_0.60  	all	0.1300
+iprec_at_recall_0.70  	all	0.0940
+iprec_at_recall_0.80  	all	0.0726
+iprec_at_recall_0.90  	all	0.0375
+iprec_at_recall_1.00  	all	0.0059
+P_5                   	all	0.3200
+P_10                  	all	0.3320
+P_15                  	all	0.3053
+P_20                  	all	0.2640
+P_30                  	all	0.2200
+P_100                 	all	0.1274
+P_200                 	all	0.0823
+P_500                 	all	0.0480
+P_1000                	all	0.0292
+</pre>
+ <h4>QUTTOPSIG.6.3.noadd</h4>
+            <pre>
+runid                 	all	Topsig
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1195
+map                   	all	0.0745
+gm_map                	all	0.0061
+Rprec                 	all	0.0892
+bpref                 	all	0.2527
+recip_rank            	all	0.1913
+iprec_at_recall_0.00  	all	0.2322
+iprec_at_recall_0.10  	all	0.1507
+iprec_at_recall_0.20  	all	0.1304
+iprec_at_recall_0.30  	all	0.1127
+iprec_at_recall_0.40  	all	0.0839
+iprec_at_recall_0.50  	all	0.0677
+iprec_at_recall_0.60  	all	0.0543
+iprec_at_recall_0.70  	all	0.0450
+iprec_at_recall_0.80  	all	0.0367
+iprec_at_recall_0.90  	all	0.0254
+iprec_at_recall_1.00  	all	0.0019
+P_5                   	all	0.0960
+P_10                  	all	0.0900
+P_15                  	all	0.1013
+P_20                  	all	0.0980
+P_30                  	all	0.0860
+P_100                 	all	0.0692
+P_200                 	all	0.0547
+P_500                 	all	0.0379
+P_1000                	all	0.0239
+</pre>
+
+<h2>Evaluation with nDCG</h2>
+        <p>These results have been obtained with the graded relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>.</br>To obtain nDCG at different ranks, trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 -m ndcg_cut qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt runName</pre>
+ <h4>QUTTOPSIG.1.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.3376
+ndcg_cut_10           	all	0.3419
+ndcg_cut_15           	all	0.3183
+ndcg_cut_20           	all	0.3066
+ndcg_cut_30           	all	0.2944
+ndcg_cut_100          	all	0.3576
+ndcg_cut_200          	all	0.3872
+ndcg_cut_500          	all	0.4214
+ndcg_cut_1000         	all	0.4407
+</pre>
+ <h4>QUTTOPSIG.2.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.3281
+ndcg_cut_10           	all	0.3368
+ndcg_cut_15           	all	0.3139
+ndcg_cut_20           	all	0.3033
+ndcg_cut_30           	all	0.2921
+ndcg_cut_100          	all	0.3560
+ndcg_cut_200          	all	0.3855
+ndcg_cut_500          	all	0.4196
+ndcg_cut_1000         	all	0.4389
+</pre>
+ <h4>QUTTOPSIG.3.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.2808
+ndcg_cut_10           	all	0.2948
+ndcg_cut_15           	all	0.2910
+ndcg_cut_20           	all	0.2765
+ndcg_cut_30           	all	0.2688
+ndcg_cut_100          	all	0.3339
+ndcg_cut_200          	all	0.3594
+ndcg_cut_500          	all	0.3881
+ndcg_cut_1000         	all	0.4129
+</pre>
+ <h4>QUTTOPSIG.4.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.0669
+ndcg_cut_10           	all	0.0617
+ndcg_cut_15           	all	0.0584
+ndcg_cut_20           	all	0.0623
+ndcg_cut_30           	all	0.0727
+ndcg_cut_100          	all	0.0901
+ndcg_cut_200          	all	0.1022
+ndcg_cut_500          	all	0.1189
+ndcg_cut_1000         	all	0.1302
+</pre>
+ <h4>QUTTOPSIG.5.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.2808
+ndcg_cut_10           	all	0.2944
+ndcg_cut_15           	all	0.2904
+ndcg_cut_20           	all	0.2757
+ndcg_cut_30           	all	0.2676
+ndcg_cut_100          	all	0.3322
+ndcg_cut_200          	all	0.3578
+ndcg_cut_500          	all	0.3864
+ndcg_cut_1000         	all	0.4112
+</pre>
+ <h4>QUTTOPSIG.6.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.0876
+ndcg_cut_10           	all	0.0819
+ndcg_cut_15           	all	0.0892
+ndcg_cut_20           	all	0.0912
+ndcg_cut_30           	all	0.0921
+ndcg_cut_100          	all	0.1389
+ndcg_cut_200          	all	0.1778
+ndcg_cut_500          	all	0.2095
+ndcg_cut_1000         	all	0.2355
+</pre>
+
+<h2>Plots P@10</h2>
+<p>The plots below compare each of your runs against the median and best performance (p@10) across all systems  submitted to CLEF for each query topic. In particular, for each query, the height of a bar represents the gain/loss of your system and the best system (for that query) over the median system. The height of a bar in then given by:</p>
+<pre>grey bars:   height(q) = your_p@10(q) - median_p@10(q)
+white bars:  height(q) = best_p@10(q) - median_p@10(q)</pre>
+
+ <h4>QUTTOPSIG.1.3.noadd</h4>
+<img src="./img/QUTTOPSIG.1.3.noadd.p10.png"/>
+ <h4>QUTTOPSIG.2.3.noadd</h4>
+<img src="./img/QUTTOPSIG.2.3.noadd.p10.png"/>
+ <h4>QUTTOPSIG.3.3.noadd</h4>
+<img src="./img/QUTTOPSIG.3.3.noadd.p10.png"/>
+ <h4>QUTTOPSIG.4.3.noadd</h4>
+<img src="./img/QUTTOPSIG.4.3.noadd.p10.png"/>
+ <h4>QUTTOPSIG.5.3.noadd</h4>
+<img src="./img/QUTTOPSIG.5.3.noadd.p10.png"/>
+ <h4>QUTTOPSIG.6.3.noadd</h4>
+<img src="./img/QUTTOPSIG.6.3.noadd.p10.png"/>
+      </div>
+    </div>
+
+    <p></p><hr><p></p>
+    <footer class="row">
+        <div class="span6">
+           <p><a href="https://github.com/bevankoopman/relevation">relevation</a> - Information Retrieval Relevance Judging System</p>
+      </div>
+    </footer>
+</div> <!-- container -->
+</body></html>

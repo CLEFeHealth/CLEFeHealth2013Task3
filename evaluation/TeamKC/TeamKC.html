@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Share/CLEF eHealth 2013 TASK 3 Results by relevation - Information Retrieval Relevance Judging System</title>
+   <meta name="description" content="">
+    <meta name="author" content="CLEF 2013 Task 3 Committee">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style type="text/css">
+        body { padding-top: 60px; font-size: 12px; }
+        label, button, .btn { font-size: 12px; }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="./clef_eval_files/jquery.min.js"></script>
+    <script src="./clef_eval_files/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+<style type="text/css">@media print { #feedlyMiniIcon { display: none; } }</style></head>
+
+<body style="zoom: 1;">
+<div class="container">
+<div class="well">
+        <h1>Share/CLEF eHealth 2013 TASK 3 Results - TeamKC</h1>
+        <p>This page summarises the results obtained from your submissions. Here, you can find the mean performance of your submissions, for all standard trec_eval measures and for nDCG at different ranks.</br> For this first year, the Share/CLEF eHealth 2013 TASK 3 built result pools from your submissions considering the top 10 documents ranked by your baseline system (run 1), and the highest priority run that used the discharge summaries (run 2) and the highest priority run that did not used the discharge summaries (run 5). As a consequence:<ul><li>the <b>primary measure for this year is precision at 10 (P@10)</b>,</li><li>the <b>secondary measure is Normalised Discounted Cumulative Gain at rank 10</b> (ndcg_cut_10).</li></ul>Per-query performance can be found in the <i>evals</i> folder in the directory containing this HTML page.</br>Some of the participant's runs contained formatting errors (the most common was the use of a numeric query id in place of the official qtestXX id); others did not retrieve results for some queries. To fairly evaluate the runs of every participant, submitted runs containing formatting errors have been corrected; an artificial document (fakeCLEF) has been added to the result rankings for queries where no result was retrieved. Your runs as have been evaluated are contained in the folder <i>runs</i>.</br>Please refer to the <a href="https://sites.google.com/site/shareclefehealth/">ShARe/CLEF 2013 eHealth Evaluation Lab website</a> for additional details on the task.</p>
+    </div>
+    <div class="row">
+        <div class="span9">
+            <h2>Evaluation with standard trec_eval metrics</h2>
+        <p>These results have been obtained with the binary relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>. Trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 qrels.clef2013ehealth.1-50-test.bin.final.20062013.txt runName</pre>
+ <h4>TeamKC.1.3.noadd</h4>
+            <pre>
+runid                 	all	Exp
+num_q                 	all	50
+num_ret               	all	48914
+num_rel               	all	1878
+num_rel_ret           	all	1646
+map                   	all	0.2666
+gm_map                	all	0.0965
+Rprec                 	all	0.2821
+bpref                 	all	0.3506
+recip_rank            	all	0.5132
+iprec_at_recall_0.00  	all	0.5814
+iprec_at_recall_0.10  	all	0.5213
+iprec_at_recall_0.20  	all	0.4648
+iprec_at_recall_0.30  	all	0.3934
+iprec_at_recall_0.40  	all	0.3115
+iprec_at_recall_0.50  	all	0.2507
+iprec_at_recall_0.60  	all	0.2094
+iprec_at_recall_0.70  	all	0.1592
+iprec_at_recall_0.80  	all	0.1328
+iprec_at_recall_0.90  	all	0.1031
+iprec_at_recall_1.00  	all	0.0349
+P_5                   	all	0.4040
+P_10                  	all	0.4040
+P_15                  	all	0.3720
+P_20                  	all	0.3470
+P_30                  	all	0.2993
+P_100                 	all	0.1528
+P_200                 	all	0.1015
+P_500                 	all	0.0586
+P_1000                	all	0.0329
+</pre>
+ <h4>TeamKC.2.3.noadd</h4>
+            <pre>
+runid                 	all	Exp
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	217
+map                   	all	0.0178
+gm_map                	all	0.0004
+Rprec                 	all	0.0336
+bpref                 	all	0.0591
+recip_rank            	all	0.1245
+iprec_at_recall_0.00  	all	0.1408
+iprec_at_recall_0.10  	all	0.0554
+iprec_at_recall_0.20  	all	0.0340
+iprec_at_recall_0.30  	all	0.0174
+iprec_at_recall_0.40  	all	0.0125
+iprec_at_recall_0.50  	all	0.0047
+iprec_at_recall_0.60  	all	0.0039
+iprec_at_recall_0.70  	all	0.0009
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.0720
+P_10                  	all	0.0600
+P_15                  	all	0.0533
+P_20                  	all	0.0450
+P_30                  	all	0.0387
+P_100                 	all	0.0222
+P_200                 	all	0.0136
+P_500                 	all	0.0074
+P_1000                	all	0.0043
+</pre>
+ <h4>TeamKC.3.3.noadd</h4>
+            <pre>
+runid                 	all	Exp
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1465
+map                   	all	0.1590
+gm_map                	all	0.0246
+Rprec                 	all	0.1753
+bpref                 	all	0.3572
+recip_rank            	all	0.3161
+iprec_at_recall_0.00  	all	0.3935
+iprec_at_recall_0.10  	all	0.3095
+iprec_at_recall_0.20  	all	0.2625
+iprec_at_recall_0.30  	all	0.2185
+iprec_at_recall_0.40  	all	0.1668
+iprec_at_recall_0.50  	all	0.1486
+iprec_at_recall_0.60  	all	0.1321
+iprec_at_recall_0.70  	all	0.1161
+iprec_at_recall_0.80  	all	0.0986
+iprec_at_recall_0.90  	all	0.0793
+iprec_at_recall_1.00  	all	0.0295
+P_5                   	all	0.2040
+P_10                  	all	0.1920
+P_15                  	all	0.1933
+P_20                  	all	0.1780
+P_30                  	all	0.1627
+P_100                 	all	0.1030
+P_200                 	all	0.0774
+P_500                 	all	0.0478
+P_1000                	all	0.0293
+</pre>
+ <h4>TeamKC.4.3.noadd</h4>
+            <pre>
+runid                 	all	Exp
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	1433
+map                   	all	0.1634
+gm_map                	all	0.0229
+Rprec                 	all	0.1838
+bpref                 	all	0.3372
+recip_rank            	all	0.3552
+iprec_at_recall_0.00  	all	0.4248
+iprec_at_recall_0.10  	all	0.3483
+iprec_at_recall_0.20  	all	0.2728
+iprec_at_recall_0.30  	all	0.2185
+iprec_at_recall_0.40  	all	0.1783
+iprec_at_recall_0.50  	all	0.1424
+iprec_at_recall_0.60  	all	0.1189
+iprec_at_recall_0.70  	all	0.1047
+iprec_at_recall_0.80  	all	0.0912
+iprec_at_recall_0.90  	all	0.0663
+iprec_at_recall_1.00  	all	0.0222
+P_5                   	all	0.2520
+P_10                  	all	0.2320
+P_15                  	all	0.2000
+P_20                  	all	0.1820
+P_30                  	all	0.1760
+P_100                 	all	0.1098
+P_200                 	all	0.0795
+P_500                 	all	0.0485
+P_1000                	all	0.0287
+</pre>
+ <h4>TeamKC.5.3.noadd</h4>
+            <pre>
+runid                 	all	Exp
+num_q                 	all	50
+num_ret               	all	50000
+num_rel               	all	1878
+num_rel_ret           	all	250
+map                   	all	0.0197
+gm_map                	all	0.0008
+Rprec                 	all	0.0412
+bpref                 	all	0.0702
+recip_rank            	all	0.1431
+iprec_at_recall_0.00  	all	0.1586
+iprec_at_recall_0.10  	all	0.0701
+iprec_at_recall_0.20  	all	0.0335
+iprec_at_recall_0.30  	all	0.0176
+iprec_at_recall_0.40  	all	0.0111
+iprec_at_recall_0.50  	all	0.0080
+iprec_at_recall_0.60  	all	0.0051
+iprec_at_recall_0.70  	all	0.0011
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.0680
+P_10                  	all	0.0580
+P_15                  	all	0.0547
+P_20                  	all	0.0500
+P_30                  	all	0.0440
+P_100                 	all	0.0246
+P_200                 	all	0.0164
+P_500                 	all	0.0079
+P_1000                	all	0.0050
+</pre>
+ <h4>TeamKC.6.3.noadd</h4>
+            <pre>
+runid                 	all	Exp
+num_q                 	all	50
+num_ret               	all	48499
+num_rel               	all	1878
+num_rel_ret           	all	1561
+map                   	all	0.2270
+gm_map                	all	0.0808
+Rprec                 	all	0.2528
+bpref                 	all	0.3355
+recip_rank            	all	0.4861
+iprec_at_recall_0.00  	all	0.5511
+iprec_at_recall_0.10  	all	0.5119
+iprec_at_recall_0.20  	all	0.3939
+iprec_at_recall_0.30  	all	0.3499
+iprec_at_recall_0.40  	all	0.2571
+iprec_at_recall_0.50  	all	0.1901
+iprec_at_recall_0.60  	all	0.1521
+iprec_at_recall_0.70  	all	0.1215
+iprec_at_recall_0.80  	all	0.0997
+iprec_at_recall_0.90  	all	0.0746
+iprec_at_recall_1.00  	all	0.0227
+P_5                   	all	0.3440
+P_10                  	all	0.3640
+P_15                  	all	0.3227
+P_20                  	all	0.3040
+P_30                  	all	0.2693
+P_100                 	all	0.1358
+P_200                 	all	0.0931
+P_500                 	all	0.0544
+P_1000                	all	0.0312
+</pre>
+
+<h2>Evaluation with nDCG</h2>
+        <p>These results have been obtained with the graded relevance assessment, i.e. qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt, and trec_eval 9.0 <a href="http://trec.nist.gov/trec_eval/">as distributed by NIST</a>.</br>To obtain nDCG at different ranks, trec_eval was ran as follows:</p>
+<pre>./trec_eval -c -M1000 -m ndcg_cut qrels.clef2013ehealth.1-50-test.graded.final.20062013.txt runName</pre>
+ <h4>TeamKC.1.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.3587
+ndcg_cut_10           	all	0.3637
+ndcg_cut_15           	all	0.3577
+ndcg_cut_20           	all	0.3568
+ndcg_cut_30           	all	0.3544
+ndcg_cut_100          	all	0.4121
+ndcg_cut_200          	all	0.4568
+ndcg_cut_500          	all	0.5021
+ndcg_cut_1000         	all	0.5164
+</pre>
+ <h4>TeamKC.2.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.0589
+ndcg_cut_10           	all	0.0548
+ndcg_cut_15           	all	0.0507
+ndcg_cut_20           	all	0.0464
+ndcg_cut_30           	all	0.0443
+ndcg_cut_100          	all	0.0544
+ndcg_cut_200          	all	0.0609
+ndcg_cut_500          	all	0.0715
+ndcg_cut_1000         	all	0.0778
+</pre>
+ <h4>TeamKC.3.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.1759
+ndcg_cut_10           	all	0.1765
+ndcg_cut_15           	all	0.1832
+ndcg_cut_20           	all	0.1866
+ndcg_cut_30           	all	0.1964
+ndcg_cut_100          	all	0.2658
+ndcg_cut_200          	all	0.3132
+ndcg_cut_500          	all	0.3503
+ndcg_cut_1000         	all	0.3789
+</pre>
+ <h4>TeamKC.4.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.2133
+ndcg_cut_10           	all	0.2062
+ndcg_cut_15           	all	0.1961
+ndcg_cut_20           	all	0.1956
+ndcg_cut_30           	all	0.2108
+ndcg_cut_100          	all	0.2783
+ndcg_cut_200          	all	0.3234
+ndcg_cut_500          	all	0.3550
+ndcg_cut_1000         	all	0.3793
+</pre>
+ <h4>TeamKC.5.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.0586
+ndcg_cut_10           	all	0.0549
+ndcg_cut_15           	all	0.0535
+ndcg_cut_20           	all	0.0516
+ndcg_cut_30           	all	0.0490
+ndcg_cut_100          	all	0.0590
+ndcg_cut_200          	all	0.0695
+ndcg_cut_500          	all	0.0782
+ndcg_cut_1000         	all	0.0880
+</pre>
+ <h4>TeamKC.6.3.noadd</h4>
+            <pre>
+ndcg_cut_5            	all	0.3144
+ndcg_cut_10           	all	0.3281
+ndcg_cut_15           	all	0.3190
+ndcg_cut_20           	all	0.3212
+ndcg_cut_30           	all	0.3227
+ndcg_cut_100          	all	0.3726
+ndcg_cut_200          	all	0.4180
+ndcg_cut_500          	all	0.4571
+ndcg_cut_1000         	all	0.4751
+</pre>
+
+<h2>Plots P@10</h2>
+<p>The plots below compare each of your runs against the median and best performance (p@10) across all systems  submitted to CLEF for each query topic. In particular, for each query, the height of a bar represents the gain/loss of your system and the best system (for that query) over the median system. The height of a bar in then given by:</p>
+<pre>grey bars:   height(q) = your_p@10(q) - median_p@10(q)
+white bars:  height(q) = best_p@10(q) - median_p@10(q)</pre>
+
+ <h4>TeamKC.1.3.noadd</h4>
+<img src="./img/TeamKC.1.3.noadd.p10.png"/>
+ <h4>TeamKC.2.3.noadd</h4>
+<img src="./img/TeamKC.2.3.noadd.p10.png"/>
+ <h4>TeamKC.3.3.noadd</h4>
+<img src="./img/TeamKC.3.3.noadd.p10.png"/>
+ <h4>TeamKC.4.3.noadd</h4>
+<img src="./img/TeamKC.4.3.noadd.p10.png"/>
+ <h4>TeamKC.5.3.noadd</h4>
+<img src="./img/TeamKC.5.3.noadd.p10.png"/>
+ <h4>TeamKC.6.3.noadd</h4>
+<img src="./img/TeamKC.6.3.noadd.p10.png"/>
+      </div>
+    </div>
+
+    <p></p><hr><p></p>
+    <footer class="row">
+        <div class="span6">
+           <p><a href="https://github.com/bevankoopman/relevation">relevation</a> - Information Retrieval Relevance Judging System</p>
+      </div>
+    </footer>
+</div> <!-- container -->
+</body></html>
